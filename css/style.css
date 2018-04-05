@@ -1,0 +1,48 @@
+body, html {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#main-header {
+  background-color: #ccc;
+  color: #eee;
+  padding: 20px;
+}
+#main-header input {
+  background-color: #ccc;
+  border: 1px solid #999;
+}
+
+#txtMovieSearch {
+  margin-left: 5px;
+  height: 26px;
+  padding: 2px;
+}
+
+#btnMovieSearch {
+  height: 26px;
+  background-color: #777;
+  border: 1px solid #999;
+  color: #eee;
+}
+
+#movies-container {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+  width: 700px;
+  background-color: #eee;
+  margin: 0 auto;
+}
+#movies-container .img {
+  margin: 10px;
+  width: 150px;
+  cursor: pointer;
+}
+#movies-container .img img {
+  width: 100%;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>MovieSearch</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <header id="main-header">
+    <img src="images/logo.png" width="100" height="100" />
+  <label>Enter Movie Title
+    <input type="text" id="txtMovieSearch">
+    <button id="btnMovieSearch">Go</button>
+  </label>
+</header>
+
+<div id="movies-container">
+  <movies v-for="movie in movies" :movieresult="movie"></movies>
+</div>
+
+<div class="modal fade" id="movie-modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">{{ Title }} ({{ Year }})</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>{{ Plot }}</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
